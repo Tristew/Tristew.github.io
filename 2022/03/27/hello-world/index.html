@@ -708,7 +708,7 @@ www.codesheep.cn
   }
   function openBtnClickFn () {
     let openOrCloseBtn = $('.toc-aside .toc-aside-title .toc-open-close');
-    let open = eval('' || 'true');
+    let open = eval('' || 'false');
     openOrCloseBtn.click(function() {
       if (open) {
         closeToc();
@@ -724,7 +724,7 @@ www.codesheep.cn
 
   function initCloseTocWidth(init) {
     if (window.innerWidth >= 992) {
-      let isClose = false;
+      let isClose = true;
       isClose && closeToc(init)
     }
   }
